@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicio 5 - Cálculo de Figuras Geométricas</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/ejercicio5.js"></script>
+  <script defer src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/eje5.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo nav-link">MenuPrincipal</a>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-menu-item">
+          <a href="ejercicio1.html" class="nav-menu-link nav-link">ejercicio1</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio2.html" class="nav-menu-link nav-link">ejercicio2</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio3.html" class="nav-menu-link nav-link">ejercicio3</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio4.html" class="nav-menu-link nav-link">ejercicio4</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio5.html" class="nav-menu-link nav-link">ejercicio5</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio6.html" class="nav-menu-link nav-link">ejercicio6</a>
+        </li>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <h1>Cálculo de Figuras Geométricas</h1>
+
+  <div class="figure-card">
+    <h2>Círculo</h2>
+    <button onclick="calcularPerimetro('circulo')">Perímetro</button>
+    <button onclick="calcularArea('circulo')">Área</button>
+  </div>
+
+  <div class="figure-card">
+    <h2>Triángulo</h2>
+    <button onclick="calcularPerimetro('triangulo')">Perímetro</button>
+    <button onclick="calcularArea('triangulo')">Área</button>
+  </div>
+
+  <div class="figure-card">
+    <h2>Rectángulo</h2>
+    <button onclick="calcularPerimetro('rectangulo')">Perímetro</button>
+    <button onclick="calcularArea('rectangulo')">Área</button>
+  </div>
+
+  <div class="figure-card">
+    <h2>Cuadrado</h2>
+    <button onclick="calcularPerimetro('cuadrado')">Perímetro</button>
+    <button onclick="calcularArea('cuadrado')">Área</button>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="figure-title"></h2>
+      <div id="input-container"></div>
+      <button onclick="calcularResultado()">Calcular</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Usuario</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/eje6.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo nav-link">MenuPrincipal</a>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-menu-item">
+          <a href="ejercicio1.html" class="nav-menu-link nav-link">ejercicio1</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio2.html" class="nav-menu-link nav-link">ejercicio2</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio3.html" class="nav-menu-link nav-link">ejercicio3</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio4.html" class="nav-menu-link nav-link">ejercicio4</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio5.html" class="nav-menu-link nav-link">ejercicio5</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio6.html" class="nav-menu-link nav-link">ejercicio6</a>
+        </li>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+<section class="form-main">
+  <div class="form-content">
+    <div class="box">
+      <h3>Formulario - Registrar Usuario</h3>
+     <form id="formulario" onsubmit="validarFormulario(); return false;">
+    <div>
+      <label for="tipoDocumento">Tipo de documento:</label>
+      <select id="tipoDocumento" required>
+        <option value="">Seleccione</option>
+        <option value="CC">Cédula de Ciudadanía</option>
+        <option value="TI">Tarjeta de Identidad</option>
+        <option value="CE">Cédula de Extranjería</option>
+      </select>
+    </div>
+    <div class="input-box">
+      <label for="numeroDocumento">No. Documento:</label>
+      <input class="input-control" type="text" id="numeroDocumento" required pattern="[0-9]{5,}">
+    </div>
+    <div class="input-box">
+      <label for="nombre">Nombre:</label>
+      <input class="input-control" type="text" id="nombre" required pattern="[A-Za-z0-9\s]+">
+    </div>
+    <div class="input-box">
+      <label for="apellido">Apellido:</label>
+      <input class="input-control" type="text" id="apellido" required pattern="[A-Za-z0-9\s]+">
+    </div>
+    <div class="input-box">
+      <label for="fechaNacimiento">Fecha Nacimiento:</label>
+      <input class="input-control" type="date" id="fechaNacimiento" >
+    </div>
+    <div class="input-box">
+      <label for="correoElectronico">Correo Electrónico:</label>
+      <input class="input-control" type="email" id="correoElectronico" required pattern="[a-zA-Z0-9._%+-]+@misena\.edu\.co" >
+    </div>
+    <div class="input-box">
+      <label for="password">Contraseña:</label>
+      <input class="input-control" type="password" id="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{10,}$">
+    </div>
+    <div class="input-box">
+      <label for="confirmarPassword">Confirmar Contraseña:</label>
+      <input class="input-control" type="password" id="confirmarPassword" required>
+    </div>
+    <div class="input-box">
+      <input type="checkbox" id="terminosUso" required>
+      <label for="terminosUso">Aceptar Términos de uso</label>
+    </div>
+    <div class="input-box">
+      <button type="submit" class="btn">Registrarse</button>
+    </div>
+    </form>
+
+    <script src="js/ejercicio6.js"></script>
+
+  </div>
+
+</div>
+
+</section>
+</body>
+</html>

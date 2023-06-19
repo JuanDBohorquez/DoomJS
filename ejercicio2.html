@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicio 2 - Conversión de Temperatura</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/ejercicio2.js"></script>
+  <script defer src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/eje2.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo nav-link">MenuPrincipal</a>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-menu-item">
+          <a href="ejercicio1.html" class="nav-menu-link nav-link">ejercicio1</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio2.html" class="nav-menu-link nav-link">ejercicio2</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio3.html" class="nav-menu-link nav-link">ejercicio3</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio4.html" class="nav-menu-link nav-link">ejercicio4</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio5.html" class="nav-menu-link nav-link">ejercicio5</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio6.html" class="nav-menu-link nav-link">ejercicio6</a>
+        </li>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <h1>Conversión de Temperatura</h1>
+
+  <form onsubmit="return convertirTemperatura()">
+    <div class="form-group">
+      <label for="temperatura">Temperatura:</label>
+      <input type="number" id="temperatura">
+    </div>
+
+    <div class="form-group">
+      <label for="seleccionOrigen">Convertir de:</label>
+      <select id="seleccionOrigen">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="seleccionDestino">Convertir a:</label>
+      <select id="seleccionDestino">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+    </div>
+
+    <button type="submit">Realizar Conversión</button>
+  </form>
+</body>
+</html>

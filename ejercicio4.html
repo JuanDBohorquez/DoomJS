@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicio 4 - Verificación de Instructores</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/ejercicio4.js"></script>
+  <script defer src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/eje4.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo nav-link">MenuPrincipal</a>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-menu-item">
+          <a href="ejercicio1.html" class="nav-menu-link nav-link">ejercicio1</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio2.html" class="nav-menu-link nav-link">ejercicio2</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio3.html" class="nav-menu-link nav-link">ejercicio3</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio4.html" class="nav-menu-link nav-link">ejercicio4</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio5.html" class="nav-menu-link nav-link">ejercicio5</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="ejercicio6.html" class="nav-menu-link nav-link">ejercicio6</a>
+        </li>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <h1>Verificación de Instructores</h1>
+
+  <form onsubmit="return verificarInstructor()">
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <select id="nombre">
+        <option value="juano">Juano</option>
+        <option value="David">David</option>
+        <option value="Camila">Camila</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="apellido">Apellido:</label>
+      <select id="apellido">
+        <option value="bohorquez">Bohorquez</option>
+        <option value="elver">Elver</option>
+        <option value="galarga">Galarga</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="actividad">Actividad:</label>
+      <select id="actividad">
+        <option value="AnalisisBD">AnalisisBD</option>
+        <option value="DiseñoWeb">Diseño Web</option>
+        <option value="Marketing">Marketing Digital</option>
+      </select>
+    </div>
+
+    <button type="submit">Verificar</button>
+  </form>
+</body>
+</html>
